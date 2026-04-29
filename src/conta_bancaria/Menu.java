@@ -2,6 +2,8 @@ package conta_bancaria;
 
 import java.util.Scanner;
 
+import util.Cores;
+
 public class Menu {
 
 	public static void main(String[] args) {
@@ -30,7 +32,7 @@ public class Menu {
 			System.out.println("                                                      ");
 			System.out.println("******************************************************");
 			System.out.println(" Entre com a opção Desejada:                          ");
-			System.out.println("                                                      ");
+			System.out.println("                                                      "+ Cores.TEXT_RESET);
 
 			opcao = leia.nextInt();
 
@@ -44,43 +46,43 @@ public class Menu {
 			switch (opcao) {
 
 			case 1:
-				System.out.println("Criar Conta \n\n");
+				System.out.println(Cores.TEXT_WHITE + "Criar Conta \n\n");
 				break;
 
 			case 2:
-				System.out.println("Listar todas as Contas \n\n");
+				System.out.println(Cores.TEXT_WHITE + "Listar todas as Contas \n\n");
 				break;
 
 			case 3:
-				System.out.println("Buscar Conta - Por Número \n\n");
+				System.out.println(Cores.TEXT_WHITE + "Buscar Conta - Por Número \n\n");
 
 				break;
 
 			case 4:
-				System.out.println("Atualizar Dados da Conta \n\n");
+				System.out.println(Cores.TEXT_WHITE + "Atualizar Dados da Conta \n\n");
 				break;
 
 			case 5:
-				System.out.println("Apagar a Conta \n\n");
+				System.out.println(Cores.TEXT_WHITE + "Apagar a Conta \n\n");
 
 				break;
 
 			case 6:
-				System.out.println("Saque \n\n");
+				System.out.println(Cores.TEXT_WHITE + "Saque \n\n");
 
 				break;
 
 			case 7:
-				System.out.println("Deposito \n\n");
+				System.out.println(Cores.TEXT_WHITE + "Deposito \n\n");
 
 				break;
 
 			case 8:
-				System.out.println("Transferencia entre Contas \n\n");
+				System.out.println(Cores.TEXT_WHITE + "Transferencia entre Contas \n\n");
 
 				break;
 			default:
-				System.out.print("\nOpção Invalida!!!\n");
+				System.out.print(Cores.TEXT_RED_BOLD + "\nOpção Invalida!!!\n" + Cores.TEXT_RESET);
 				break;
 			}
 
